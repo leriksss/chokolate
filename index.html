@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+		</style> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<nav class="nav nav__container">
+				<ul class="menu">
+					<li class="menu__item"><a href="" class="menu__link">home</a></li>
+					<li class="menu__item"><a href="" class="menu__link">pages</a></li>
+					<li class="menu__item"><a href="" class="menu__link">shop</a></li>
+					<li class="menu__item"><a href="" class="menu__link">portfolio</a></li>
+					<li class="menu__item"><a href="" class="menu__link">blog</a></li>
+				</ul>
+				<div class="logo__block"><img src="img/logo.svg" alt="" class="logo"></div>
+				<ul class="menu">
+					<li class="menu__item"><a href="" class="menu__link">online order</a></li>
+					<li class="menu__item"><a href="" class="menu__link">login</a></li>
+					<li class="menu__item"><a href="" class="menu__link">cart</a></li>
+				</ul>
+			</nav>
+			<div>
+				<div class="hero__block"></div>
+				<div class="choco__container">
+					<div class="choco__item">
+						<img src="img/ice-cream.jpg" alt="" class="choco__img">
+						<div class="choco__content">
+							<h3 class="choco__title">Ice Cream</h3>
+							<p class="choco__text">Refreshing and creamy delight.</p>
+						</div>
+					</div>
+					<div class="choco__item">
+						<img src="img/choco-nuts.jpg" alt="" class="choco__img">
+						<div class="choco__content">
+							<h3 class="choco__title">Choco Nuts</h3>
+							<p class="choco__text">Crunchy and rich chocolate experience.</p>
+						</div>
+					</div>
+					<div class="choco__item">
+						<img src="img/choco-dessert.jpg" alt="" class="choco__img">
+						<div class="choco__content">
+							<h3 class="choco__title">Choco Delight</h3>
+							<p class="choco__text">A luxurious blend of chocolate and berries.</p>
+						</div>
+					</div>
+					<div class="choco__item">
+						<img src="img/gift-boxes.jpg" alt="" class="choco__img">
+						<div class="choco__content">
+							<h3 class="choco__title">Gift Boxes</h3>
+							<p class="choco__text">Perfect present for chocolate lovers.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="catalog__section catalog__container">
+			<div class="catalog__block">
+				<p class="section__name">choco love</p>
+				<h2 class="catalog__title">baked into a true perfection</h2>
+			</div>
+			<ul class="catalog__menu">
+				<li class="catalog__menu--item active" data-target="all">all</li>
+				<li class="catalog__menu--item" data-target="confiseurs">confiseurs</li>
+				<li class="catalog__menu--item" data-target="caramel">caramel</li>
+				<li class="catalog__menu--item" data-target="popular">popular</li>
+				<li class="catalog__menu--item" data-target="fudge">fudge</li>
+			</ul>
+			<div class="catalog__sections">
+				<div class="catalog__product active" data-section="all">
+					<div class="product__item">
+						<img src="img/product img/01.jpg" alt="" class="product__img">
+						<p class="product__title">Chocolate Mousse</p>
+						<p class="product__description">Delicate chocolate</p>
+						<p class="product__price">$10</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/02.jpg" alt="" class="product__img">
+						<p class="product__title">Mirror Glazed Chocolate Pastries</p>
+						<p class="product__description">Glazed chocolate desserts</p>
+						<p class="product__price">$10</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/03.jpg" alt="" class="product__img">
+						<p class="product__title">Chocolate Fondant with Ice Cream</p>
+						<p class="product__description">Warm chocolate fondant</p>
+						<p class="product__price">$10</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/04.jpg" alt="" class="product__img">
+						<p class="product__title">Luxury Chocolate Box</p>
+						<p class="product__description">A premium selection</p>
+						<p class="product__price">$10</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/05.jpg" alt="" class="product__img">
+						<p class="product__title">Assorted Chocolate Truffles</p>
+						<p class="product__description">A mix of delicious chocolate</p>
+						<p class="product__price">$10</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/06.jpg" alt="" class="product__img">
+						<p class="product__title">Dark Chocolate with Orange</p>
+						<p class="product__description">Rich dark chocolate</p>
+						<p class="product__price">$10</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/07.jpg" alt="" class="product__img">
+						<p class="product__title">Walnut Chocolate Delight</p>
+						<p class="product__description">A creamy chocolate</p>
+						<p class="product__price">$10</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/08.jpg" alt="" class="product__img">
+						<p class="product__title">Gourmet Chocolate Bar</p>
+						<p class="product__description">A premium handcrafted chocolate</p>
+						<p class="product__price">$10</p>
+					</div>
+				</div>
+				<div class="catalog__product" data-section="confiseurs">
+					<div class="product__item">
+						<img src="img/product img/09.jpg" alt="" class="product__img">
+						<p class="product__title">Strawberry Macarons</p>
+						<p class="product__description">Light and airy macarons</p>
+						<p class="product__price">$12</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/10.jpg" alt="" class="product__img">
+						<p class="product__title">Chocolate Brownie with Ice Cream</p>
+						<p class="product__description">Rich chocolate brownie</p>
+						<p class="product__price">$12</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/11.jpg" alt="" class="product__img">
+						<p class="product__title">Banana Caramel Pancake</p>
+						<p class="product__description">Fluffy pancake topped</p>
+						<p class="product__price">$12</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/12.jpg" alt="" class="product__img">
+						<p class="product__title">Raspberry Dark Chocolate</p>
+						<p class="product__description">Crunchy dark chocolate</p>
+						<p class="product__price">$12</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/13.jpg" alt="" class="product__img">
+						<p class="product__title">Nutty Chocolate Bark</p>
+						<p class="product__description">Chunky chocolate bark</p>
+						<p class="product__price">$12</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/14.jpg" alt="" class="product__img">
+						<p class="product__title">Chocolate Glazed Desserts</p>
+						<p class="product__description">Mini chocolate-glazed</p>
+						<p class="product__price">$12</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/15.jpg" alt="" class="product__img">
+						<p class="product__title">Chocolate Cherry Cupcakes</p>
+						<p class="product__description">Moist chocolate cupcakes</p>
+						<p class="product__price">$12</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/16.jpg" alt="" class="product__img">
+						<p class="product__title">Berry Chocolate Smoothie</p>
+						<p class="product__description">Creamy chocolate smoothie</p>
+						<p class="product__price">$12</p>
+					</div>
+				</div>
+				<div class="catalog__product" data-section="caramel">
+					<div class="product__item">
+						<img src="img/product img/17.jpg" alt="" class="product__img">
+						<p class="product__title">Chocolate Pancakes with Caramelized Fruit</p>
+						<p class="product__description">Fluffy pancakes drizzled</p>
+						<p class="product__price">$8</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/18.jpg" alt="" class="product__img">
+						<p class="product__title">Pistachio Caramel Tarts</p>
+						<p class="product__description">Buttery tart shells</p>
+						<p class="product__price">$8</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/19.jpg" alt="" class="product__img">
+						<p class="product__title">Caramelized Honeycomb</p>
+						<p class="product__description">Crispy honeycomb</p>
+						<p class="product__price">$8</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/20.jpg" alt="" class="product__img">
+						<p class="product__title">Nutty Caramel Bars</p>
+						<p class="product__description">Crunchy caramel bars</p>
+						<p class="product__price">$8</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/21.jpg" alt="" class="product__img">
+						<p class="product__title">Chocolate Caramel Explosion</p>
+						<p class="product__description">Decadent chocolate cups</p>
+						<p class="product__price">$8</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/22.jpg" alt="" class="product__img">
+						<p class="product__title">Flaming Chocolate Dessert</p>
+						<p class="product__description">A dramatic flaming chocolate</p>
+						<p class="product__price">$8</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/23.jpg" alt="" class="product__img">
+						<p class="product__title">Caramelized Doughnuts with Ice Cream</p>
+						<p class="product__description">Soft caramelized doughnuts</p>
+						<p class="product__price">$8</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/24.jpg" alt="" class="product__img">
+						<p class="product__title">Chocolate Brownies with Berries</p>
+						<p class="product__description">Rich, fudgy brownies topped with.</p>
+						<p class="product__price">$8</p>
+					</div>
+				</div>
+				<div class="catalog__product" data-section="popular">
+					<div class="product__item">
+						<img src="img/product img/25.jpg" alt="" class="product__img">
+						<p class="product__title">Winter Delight</p>
+						<p class="product__description">Chocolate truffles with festive decor</p>
+						<p class="product__price">$15</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/26.jpg" alt="" class="product__img">
+						<p class="product__title">Apricot Bliss</p>
+						<p class="product__description">Traditional cookies with apricot jam</p>
+						<p class="product__price">$15</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/27.jpg" alt="" class="product__img">
+						<p class="product__title">Caramel Glow</p>
+						<p class="product__description">Mini caramel mousse cakes</p>
+						<p class="product__price">$15</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/28.jpg" alt="" class="product__img">
+						<p class="product__title">Luxury Soap</p>
+						<p class="product__description">Handmade chocolate-inspired soap</p>
+						<p class="product__price">$15</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/29.jpg" alt="" class="product__img">
+						<p class="product__title">Sweet Temptation</p>
+						<p class="product__description">Cupcake with caramel topping</p>
+						<p class="product__price">$15</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/30.jpg" alt="" class="product__img">
+						<p class="product__title">Nutty Bites</p>
+						<p class="product__description">Dark chocolate with nuts</p>
+						<p class="product__price">$15</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/31.jpg" alt="" class="product__img">
+						<p class="product__title">Coconut Dream</p>
+						<p class="product__description">Classic lamington cakes</p>
+						<p class="product__price">$15</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/32.jpg" alt="" class="product__img">
+						<p class="product__title">Berry Elegance</p>
+						<p class="product__description">White chocolate dessert with berries</p>
+						<p class="product__price">$15</p>
+					</div>
+				</div>
+				<div class="catalog__product" data-section="fudge">
+					<div class="product__item">
+						<img src="img/product img/33.jpg" alt="" class="product__img">
+						<p class="product__title">Tropical Fudge</p>
+						<p class="product__description">Passion fruit chocolate</p>
+						<p class="product__price">$14</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/34.jpg" alt="" class="product__img">
+						<p class="product__title">Raspberry Gems</p>
+						<p class="product__description">Artisan raspberry chocolates</p>
+						<p class="product__price">$15</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/35.jpg" alt="" class="product__img">
+						<p class="product__title">Dark Temptation</p>
+						<p class="product__description">Glossy chocolate dome with berry</p>
+						<p class="product__price">$15</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/36.jpg" alt="" class="product__img">
+						<p class="product__title">Elegant Layers</p>
+						<p class="product__description">White cake with berries</p>
+						<p class="product__price">$15</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/37.jpg" alt="" class="product__img">
+						<p class="product__title">Choco Fantasy</p>
+						<p class="product__description">Rich chocolate brownies</p>
+						<p class="product__price">$15</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/38.jpg" alt="" class="product__img">
+						<p class="product__title">Hazelnut Heaven</p>
+						<p class="product__description">Chocolate cake with hazelnuts</p>
+						<p class="product__price">$15</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/39.jpg" alt="" class="product__img">
+						<p class="product__title">Tiramisu Love</p>
+						<p class="product__description">Classic Italian tiramisu</p>
+						<p class="product__price">$15</p>
+					</div>
+					<div class="product__item">
+						<img src="img/product img/40.jpg" alt="" class="product__img">
+						<p class="product__title">Tropical Fudge</p>
+						<p class="product__description">Artisan raspberry chocolates</p>
+						<p class="product__price">$15</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="special__section">
+			<div class="special__container">
+				<div class="special__block">
+					<p class="section__name">hot chocolate</p>
+					<h2 class="special__title">The special taste</h2>
+					<p class="special__text">Lorem ipsum dolor sit amet, an cibo comprehensam quo, eu quas mentitum vel. Ea nam aperiri dissentias, vis eros deleniti ocurreret at.</p>
+					<button class="read__more--btn">read more <img src="img/Arrow.svg" alt="" class="arrow__img"></button>
+				</div>
+			</div>
+		</section>
+		<div class="service">
+			<div class="service__container">
+				<div class="service__item">
+					<i class="fa-regular fa-comments"></i> 
+					<span class="service__text">Customer Service</span>
+				</div>
+				<div class="service__item">
+					<i class="fa-solid fa-location-dot"></i>
+					<span class="service__text">Find Us</span>
+				</div>
+				<div class="service__item">
+					<i class="fa-regular fa-money-bill-1"></i>
+					<span class="service__text">Buy Chocolate Online</span>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__container">
+				<img src="img/logo.svg" alt="" class="logo">
+				<div class="footer__menu--block">
+					<ul class="footer__menu">
+						<h3 class="footer__title">Useful Links</h3>
+						<li class="footer__menu--item"><a href="" class="menu__link">About Us </a></li>
+						<li class="footer__menu--item"><a href="" class="menu__link">History</a></li>
+						<li class="footer__menu--item"><a href="" class="menu__link">Our Locations</a></li>
+						<li class="footer__menu--item"><a href="" class="menu__link">Today’s Menu</a></li>
+						<li class="footer__menu--item"><a href="" class="menu__link">Blog</a></li>
+						<li class="footer__menu--item"><a href="" class="menu__link">Shop</a></li>
+					</ul>
+					<ul class="footer__menu">
+						<h3 class="footer__title">Favourite</h3>
+						<li class="footer__menu--item"><a href="" class="menu__link">Orange Pralines</a></li>
+						<li class="footer__menu--item"><a href="" class="menu__link">Amaretti Oreo</a></li>
+						<li class="footer__menu--item"><a href="" class="menu__link">Choco Mousse</a></li>
+						<li class="footer__menu--item"><a href="" class="menu__link">Chocolate Truffles</a></li>
+						<li class="footer__menu--item"><a href="" class="menu__link">American Cake</a></li>
+					</ul>
+					<ul class="footer__menu subscribe">
+						<h3 class="footer__title">Newsletter</h3>
+						<li class="footer__menu--item">Subscribe to get special offers, free gifts and once-in-a-lifetime deals.</li>
+						<li class="footer__menu--item">
+							<input type="email" placeholder="Enter your email" class="enter__email">
+							<span class="email__icon">
+								<i class="fa-regular fa-envelope"></i>
+							</span>
+						</li>
+						<li class="footer__menu--item social__menu">
+							<a href="" class="social__link facebook">
+								<i class="fa-brands fa-square-facebook"></i>
+							</a>
+							<a href="" class="social__link twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+							<a href="" class="social__link pinterest">
+								<i class="fa-brands fa-pinterest"></i>
+							</a>
+							<a href="" class="social__link youtube">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
+							<a href="" class="social__link instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/catalog.js"></script>
+</body>
+
+</html>

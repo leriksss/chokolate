@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+[class *= "__container"] {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Poppins", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav__container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.logo__block {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    text-transform: capitalize;
+    &:last-child {
+        justify-content: end;
+    }
+}
+
+.menu__item,
+.footer__menu--item {
+    position: relative;
+}
+
+.menu__link,
+.social__link {
+    color: #000;
+}
+
+.menu__link:hover::after {
+    width: 100%;
+}
+
+.menu__link::after {
+    content: "";
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: #000;
+    position: absolute;
+    transition: 200ms linear;
+}
+
+.hero__block {
+    height: 70vh;
+    background: url(/img/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+.choco__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.choco__item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.choco__content {
+    width: 220px;
+    position: absolute;
+    z-index: 20;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 400ms ease-out;
+}
+
+.choco__item:hover .choco__content {
+    top: 50%;
+}
+
+.choco__title {
+    font-size: 24px;
+}
+
+.choco__text {
+    font-size: 14px;
+}
+
+.catalog__block {
+    width: 375px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+    p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 48px;
+        font-weight: normal;
+    }
+}
+
+.catalog__menu {
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    margin: 40px 0;
+}
+
+.catalog__product {
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.catalog__product.active {
+    display: grid;
+}
+
+.product__title {
+    font-weight: 600;
+}
+
+.product__description {
+    font-size: 14px;
+}
+
+.product__img {
+    width: 100%;
+}
+
+.catalog__menu--item {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.catalog__menu--item.active {
+    background-color: chocolate;
+    color: white;
+}
+
+
+.special__section {
+    margin-top: 120px;
+    background: url(/img/special-img.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.special__container {
+    display: flex;
+    justify-content: end;
+}
+
+.special__block {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.special__title {
+    font-size: 80px;    
+}
+
+.read__more--btn {
+    background: none;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    width: 210px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: 300ms;
+    &:hover {
+        background: #000000;
+        color: #fff;
+    }
+}
+
+.service {
+    background: #fcf8ed;
+    padding: 30px 0;
+    i {
+        font-size: 20px;
+    }
+}
+
+.service__container {
+    display: flex;
+    justify-content: space-between;
+    color: #707070;
+}
+
+.service__text {
+    font-size: 14px;
+}
+
+.footer {
+    margin-top: 110px;
+    margin-bottom: 110px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__menu--block {
+    display: flex;
+    gap: 100px;
+}
+
+.footer__menu--item {
+    margin-top: 20px;
+}
+
+.subscribe {
+    width: 280px;
+}
+
+.enter__email {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    border: 2px solid #000; 
+    outline: none;
+}
+
+.email__icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.social__menu {
+    display: flex;
+    gap: 16px;
+}
+
+.social__link {
+    font-size: 24px;
+    transition: 300ms ease-in;
+}
+
+.facebook:hover {
+   color: #1877F2; 
+}
+
+.twitter:hover {
+    color: #1DA1F2;
+}
+
+.pinterest:hover {
+    color: #e60023;
+}
+
+.youtube:hover {
+    color: #f00;
+}
+
+.instagram:hover {
+    color: #F56040;
+}
