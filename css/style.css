@@ -62,7 +62,7 @@ a {
 
 .hero__block {
     height: 70vh;
-    background: url(/img/hero-image.jpg);
+    background: url(../img/hero-image.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
@@ -94,6 +94,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 400ms ease-out;
+    color: #fff;
 }
 
 .choco__item:hover .choco__content {
@@ -167,7 +168,7 @@ a {
 
 .special__section {
     margin-top: 120px;
-    background: url(/img/special-img.jpg);
+    background: url(../img/special-img.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
